@@ -1,6 +1,12 @@
 function skillsMember() {
-    var member = document.getElementById("member");
-    var skills = document.getElementById("skills");
-    var projects = document.getElementById("projects");
-    var contact = document.getElementById("contact");
-    var about = document.getElementById("about")
+    Return  {
+        restrict: 'E',
+        templateUrl: 'modules/skills/views/member.html',
+        controller: 'SkillsMemberController',
+        controllerAs: 'vm',
+        bindToController: true,
+        scope: {
+            member: '='
+        }
+    };
+}
